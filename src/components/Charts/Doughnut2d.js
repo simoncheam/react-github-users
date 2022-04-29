@@ -37,9 +37,9 @@ const ChartComponent = ({data}) => {
         decimals: 0,
         doughnutRadius: '55%',
         showPercentValues: 0,
-        //palleteColors:'#264653,#2A9D8F,#E9C46A',
+        palleteColors: "#2caeba, #5D62B5, #FFC533, #F2726F, #8d6e63, #1de9b6, #6E80CA",
 
-        theme: "candy"
+      theme: "candy"
       },
       // Chart Data
       data  //! this is the prop in the object

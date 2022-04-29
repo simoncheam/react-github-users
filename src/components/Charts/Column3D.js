@@ -22,10 +22,10 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 // STEP 3 - Creating the JSON object to store the // ! chart configurations
 
-
+// ✅ OK
 const ChartComponent = ({data}) => {
   const chartConfigs = {
-    type: "column3d", // * The chart type
+    type: "column2d", // * The chart type
     width: "100%", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
@@ -38,8 +38,9 @@ const ChartComponent = ({data}) => {
         XAxisName: 'Repos',
         xAxisNameFontSize: "16",
         yAxisNameFontSize: "16",
+        palleteColors: "#2caeba, #5D62B5, #FFC533, #F2726F, #8d6e63, #1de9b6, #6E80CA",
 
-        theme: "candy"
+       theme: "candy"
       },
       // Chart Data
       data  //! this is the prop in the object

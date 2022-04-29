@@ -9,13 +9,13 @@ import ReactFC from "react-fusioncharts";
 import FusionCharts from "fusioncharts";
 
 // Include the chart type
-import Column2D from "fusioncharts/fusioncharts.charts";
+import Chart from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 
 // Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+ReactFC.fcRoot(FusionCharts, Chart,FusionTheme);
 
 // STEP 2 - Chart Data
 
@@ -25,7 +25,7 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 const ChartComponent = ({data}) => {
   const chartConfigs = {
-    type: "bar3d", // * The chart type
+    type: "bar2d", // * The chart type
     width: "100%", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
@@ -38,8 +38,11 @@ const ChartComponent = ({data}) => {
         XAxisName: 'Repos',
         xAxisNameFontSize: "16",
         yAxisNameFontSize: "16",
+        palleteColors: "#2caeba, #5D62B5, #FFC533, #F2726F, #8d6e63, #1de9b6, #6E80CA",
+      theme: "candy"
 
-        theme: "candy"
+
+
       },
       // Chart Data
       data  //! this is the prop in the object

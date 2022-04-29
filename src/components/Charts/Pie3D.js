@@ -12,7 +12,7 @@ import FusionCharts from "fusioncharts";
 import Column2D from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
@@ -25,7 +25,7 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 const ChartComponent = ({data}) => {
   const chartConfigs = {
-    type: "pie3d", // * The chart type
+    type: "pie2d", // * The chart type
     width: "100%", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
@@ -35,10 +35,10 @@ const ChartComponent = ({data}) => {
         //Set the chart caption
         caption: "Languages",
         decimals: 0,
-        pieRadius: '55%',
+        pieRadius: '45%',
         palleteColors:'#264653,#2A9D8F,#E9C46A',
 
-        theme: "fusion"
+        theme: "candy"
       },
       // Chart Data
       data  //! this is the prop in the object
